@@ -1,11 +1,11 @@
-import { Env } from '@config/env';
-import { TransformResponseInterceptor } from '@core/interceptors';
-import { setupSwagger } from '@core/setup';
 import { ValidationPipe, VersioningType } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 
 import { AppModule } from './app.module';
+import { Env } from './config/env';
+import { TransformResponseInterceptor } from './core/interceptors';
+import { setupSwagger } from './core/setup';
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule);

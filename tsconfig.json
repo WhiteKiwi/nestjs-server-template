@@ -13,12 +13,8 @@
 		"incremental": true,
 		"skipLibCheck": true,
 		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"paths": {
-			"@core/*": ["./src/core/*"],
-			"@common/*": ["./src/common/*"],
-			"@config/*": ["./src/config/*"],
-			"@modules/*": ["./src/modules/*"]
-		}
-	}
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
 }
